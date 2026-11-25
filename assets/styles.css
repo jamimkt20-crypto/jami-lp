@@ -1,0 +1,16 @@
+body{margin:0;background:#ffffff}
+a{color:#e3969f}a:hover{color:#ffffff}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400;letter-spacing:-0.01em}
+@keyframes rv{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
+.in{animation:rv 1s cubic-bezier(.2,.7,.2,1) both}.d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}
+.kb{animation:kb 20s ease-in-out infinite alternate;transform-origin:70% 40%}
+.bt{transition:transform .3s ease,box-shadow .3s ease}.bt:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(77,35,24,.25)}
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}.js .rv.on{opacity:1;transform:none}
+.js .t1{transition-delay:.15s}.js .t2{transition-delay:.3s}.js .t3{transition-delay:.45s}
+@media (min-width: 900px){.oneline{white-space:nowrap}}
+.hero-mob{display:none}
+@media (max-width: 700px){.hero-bg{display:none!important}.hero-mob{display:block!important}.hero-txt{padding:40px 24px 64px!important}.hero h1{font-size:34px!important}.hero-txt a{font-size:16px!important}
+.sec-pad{padding:72px 24px!important;gap:40px!important}#servicos h3{font-size:21px!important}#servicos h2{font-size:30px!important}
+.cta-pad{padding:96px 24px!important}.cta-pad h2{font-size:32px!important}#contato img{object-position:78% 40%!important}.foot{flex-direction:column;text-align:center}}
+@media (prefers-reduced-motion: reduce){.in,.kb{animation:none!important}.js .rv{opacity:1!important;transform:none!important;transition:none!important}}
